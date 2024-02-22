@@ -12,19 +12,19 @@ public class PcSpecs {
     @Id
     @GeneratedValue
     private int id;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String name;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String cpu;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String gpu;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String ram;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String ssd;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String psu;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String mb;
     public PcSpecs(){id = idGenerator.incrementAndGet(); }
 
