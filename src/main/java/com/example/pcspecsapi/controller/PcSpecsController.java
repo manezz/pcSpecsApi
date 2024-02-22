@@ -28,6 +28,11 @@ public class PcSpecsController {
         pcSpecsService.createPcSpecs(pcSpecs);
     }
 
+    @PutMapping()
+    void updatePcSpecs(@RequestBody PcSpecs pcSpecs) {
+        pcSpecsService.createPcSpecs(pcSpecs);
+    }
+
     @DeleteMapping("/{id}")
     void deletePcSpecsById(@PathVariable int id) {
         pcSpecsService.deletePcSpecs(id);
